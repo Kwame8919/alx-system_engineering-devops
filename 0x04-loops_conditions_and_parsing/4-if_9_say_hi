@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-# displays Best School 10 times.
-
-COUNTER=0
-while [ $COUNTER -lt 11 ]
-do
-    if [ $COUNTER = 9 ]
-    then
-        echo "Hi"
-    else
-        echo "Best School"
-    fi
-    let COUNTER+=1
+# this bash script uses while loops to print Best School
+i=0
+while ((i < 10)); do
+	echo 'Best School'
+	if ((i == 8)); then
+		echo 'Hi'
+	fi
+	i=$i+1
 done
