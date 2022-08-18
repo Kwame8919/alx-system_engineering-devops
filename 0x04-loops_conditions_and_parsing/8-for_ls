@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# displays the content of the current working directory.
-
-for i in *
-do
-    echo "$i" | cut -d'-' -f2
+# displays current content of dir after everything with '-'
+for i in *; do
+	echo "$i" | cut -f2 -d'-'
 done
