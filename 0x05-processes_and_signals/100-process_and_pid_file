@@ -13,5 +13,5 @@ do
     sleep 2
     trap 'echo "I hate the kill command"; sudo rm /var/run/holbertonscript.pid; exit' SIGTERM
     trap 'echo "Y U no love me?!"' SIGINT
-    trap 'sudo rm /var/run/holbertonscript.pid; exit' SIGQUIT
+    trap 'sudo rm /var/run/myscript.pid; exit' SIGQUIT
 done
