@@ -11,7 +11,7 @@ file_line { 'aaaaa':
 }
 
 file { '/var/www/html/index.html':
-  content => 'Hello World!',
+  content => 'Holberton School',
 }
 
 service { 'nginx':
