@@ -41,8 +41,8 @@ listen thelaura
         bind :80
         mode http
         balance roundrobin
-        server 652-web-01 35.190.176.186:80 check
-        server 652-web-02 35.196.156.157:80 check
+        server 652-web-01 18.206.214.104:80 check
+        server 652-web-02 3.80.18.123:80 check
 
 frontend www-http
         bind :80
@@ -56,5 +56,5 @@ frontend www-https
 
 backend web-backend
         redirect scheme https if !{ ssl_fc }
-        server 652-web-01 35.190.176.186:80 check
-        server 652-web-02 35.196.156.157:80 check
+        server 652-web-01 18.206.214.104:80 check
+        server 652-web-02 3.80.18.123:80 check
